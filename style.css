@@ -21,28 +21,9 @@ nav {
   justify-content: space-evenly;
   position: sticky;
   top: 0;
-  background-color: lightgray;
-  padding-bottom: 2px;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav ul li {
-  margin-right: 20px;
-  float: left;
-}
-
-nav ul li a {
-  text-decoration: none;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
+nav a{
   text-decoration: none;
   color: black;
 }
@@ -61,12 +42,12 @@ nav ul li a {
 
 .home img {
   margin-left: 20px;
-  margin-top: 50px;
-  width: 300px;
+  margin-top: 20px;
+  width: 500px;
 }
 
 .home h2 {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 800;
 }
 
@@ -206,6 +187,130 @@ section p {
   border-radius: 10px;
 }
 
+/* connect */
+.connect {
+  margin-top: 50px;
+  background-color: #e5edf3;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.connect h3 {
+  padding-bottom: 20px;
+  background-color: #e5edf3;
+}
+
+.connect img {
+  width: 40px;
+  background-color: #e5edf3;
+}
+
+/* footer */
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+footer p {
+  font-size: medium;
+}
+
+footer :first-child {
+  font-size: large;
+}
+
+footer div a {
+  color: black;
+  display: block;
+  font-size: medium;
+}
+
+footer img {
+  width: 30%;
+}
+
+.copyright{
+  margin-top: 70px;
+  text-align: center;
+}
+
+.copyright p {
+  color: #000017;
+  font-size: medium;
+}
+
+button :hover{
+  color: #000017;
+  background-color: #e5edf3; 
+}
+
+button :active{
+  color: white;
+  background-color: black;
+}
+
+nav :hover{
+  background-color: white;
+
+}
+
+/* For PC */
+
+@media(min-width: 900px){
+  .home img{
+    margin-left: 20px;
+    width: 350px;
+    margin-top: 20px;
+  }
+
+  .home h2{
+    font-size: 30px;
+    font-weight: 700px;
+  }
+
+  .Books-group{
+    display: grid;
+    justify-content: space-evenly;
+  }
+
+  .Books{
+    margin-bottom: 10px;
+  }
+
+  .Books button{
+    width: 15vw;
+    height: 7vh;
+  }
+
+  .card-group{
+    display: grid;
+
+  }
+
+  .card-group .card-title{
+    font-size: 1.5vw;
+    padding-top: 10px;
+  }
+
+
+  footer p {
+    font-size: 1vw;
+  }
+
+  footer div p{
+    font-size: 1vw;
+  }
+
+  footer img{
+    width: 40%;
+  }
+
+}
+
 /* for mobile users */
 @media (max-width: 420) {
   figure {
@@ -222,7 +327,7 @@ section p {
     padding-left: 40px;
   }
   .home img {
-    margin-left: 10;
+    margin-left: 10px;
     margin-top: 10px;
     width: 200px;
   }
@@ -251,11 +356,11 @@ section p {
 
   /* best sellers */
 
-  .Books-group{
+  .Books-group {
     display: grid;
     margin-left: 10px;
   }
-  .Books{
+  .Books {
     margin-bottom: 20px;
   }
   .Books img {
@@ -263,38 +368,72 @@ section p {
     height: 350px;
   }
 
-  .Books button{
+  .Books button {
     width: 10vw;
     height: 5vh;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
   /* Books collection */
-  .card-group{
+  .card-group {
     display: grid;
     margin-left: 22px;
   }
 
-  .card-group .card{
+  .card-group .card {
     margin-bottom: 20px;
     margin-top: 40px;
     width: 320px;
     height: 470px;
     margin-left: -2px;
   }
-  .card .card-title{
+  .card .card-title {
     height: 40px;
     font-size: small;
     padding-top: 3px;
   }
-  .card button{
+  .card button {
     background-color: #436e92;
     color: #373b3e9e;
-    width: 20px;
-    height: 5px;
+    width: 20vw;
+    height: 5vh;
     display: block;
     margin: 0 auto;
-    border: noun ;
+    border: noun;
   }
+
+  /* connect with us */
+
+  .connect{
+    background-color: #e5edf3;
+  }
+
+  .connect h3{
+    font-size: medium;
+    margin-top: -20px;
+  }
+
+  .connect img{
+     width: 30px;
+  }
+
+  /* footer */
+
+  footer p{
+    font-size: 2vw;
+  }
+
+  footer div :first-child{
+    font-size: 2vw;
+  }
+
+  footer div a{
+    font-size: 1.5vw;
+  }
+
+  footer img{
+    visibility: none;
+  }
+
 }
