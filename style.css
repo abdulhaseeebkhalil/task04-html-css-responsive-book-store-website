@@ -21,9 +21,11 @@ nav {
   justify-content: space-evenly;
   position: sticky;
   top: 0;
+  background-color: lightblue;
+  padding: 10px;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   color: black;
 }
@@ -84,8 +86,8 @@ section p {
 /* .group-card{
   display: block;
   margin-bottom: 20px;
-
-} */
+  
+  } */
 
 .Books-group {
   display: flex;
@@ -212,7 +214,7 @@ section p {
 footer {
   margin-top: 60px;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
 footer p {
@@ -233,7 +235,7 @@ footer img {
   width: 30%;
 }
 
-.copyright{
+.copyright {
   margin-top: 70px;
   text-align: center;
 }
@@ -243,72 +245,68 @@ footer img {
   font-size: medium;
 }
 
-button :hover{
+button :hover {
   color: #000017;
-  background-color: #e5edf3; 
+  background-color: #e5edf3;
 }
 
-button :active{
+button :active {
   color: white;
   background-color: black;
 }
 
-nav :hover{
+nav :hover {
   background-color: white;
-
 }
 
 /* For PC */
 
-@media(min-width: 900px){
-  .home img{
+@media (min-width: 900px) {
+  .home img {
     margin-left: 20px;
     width: 350px;
     margin-top: 20px;
   }
 
-  .home h2{
+  .home h2 {
     font-size: 30px;
     font-weight: 700px;
   }
 
-  .Books-group{
+  .Books-group {
     display: grid;
     justify-content: space-evenly;
   }
 
-  .Books{
+  .Books {
     margin-bottom: 10px;
   }
 
-  .Books button{
+  .Books button {
     width: 15vw;
     height: 7vh;
   }
 
-  .card-group{
+  .card-group {
     display: grid;
-
   }
 
-  .card-group .card-title{
+  .card-group .card-title {
     font-size: 1.5vw;
     padding-top: 10px;
   }
-
 
   footer p {
     font-size: 1vw;
   }
 
-  footer div p{
+  footer div p {
     font-size: 1vw;
   }
 
-  footer img{
+  footer img {
     width: 40%;
   }
-
 }
 
 /* for mobile users */
@@ -405,35 +403,34 @@ nav :hover{
 
   /* connect with us */
 
-  .connect{
+  .connect {
     background-color: #e5edf3;
   }
 
-  .connect h3{
+  .connect h3 {
     font-size: medium;
     margin-top: -20px;
   }
 
-  .connect img{
-     width: 30px;
+  .connect img {
+    width: 30px;
   }
 
   /* footer */
 
-  footer p{
+  footer p {
     font-size: 2vw;
   }
 
-  footer div :first-child{
+  footer div :first-child {
     font-size: 2vw;
   }
 
-  footer div a{
+  footer div a {
     font-size: 1.5vw;
   }
 
-  footer img{
+  footer img {
     visibility: none;
   }
-
 }
